@@ -23,7 +23,7 @@ public class TestNRB {
         BigInteger bigInteger = new BigInteger(buffer.toString());
         BigInteger wynik = bigInteger.mod(modulo);
 
-        if(wynik.equals(new BigInteger("1")))
+        if(wynik.equals(BigInteger.valueOf(1)))
             return true;
         else
             return false;
